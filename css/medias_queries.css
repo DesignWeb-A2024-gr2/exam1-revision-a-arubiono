@@ -59,3 +59,33 @@ article {
 .image img{
     width: 200px;
 }
+
+
+@media print {
+    .pub {
+        display: none;
+    }
+
+
+    #main_container {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+            "header header header"
+            "article article article"
+            "image image image";
+    }
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header::after {
+        content: "Version pour impression";
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 1.2em;
+        color: #333;
+    }
+}

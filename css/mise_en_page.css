@@ -1,0 +1,70 @@
+
+html, body {
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+
+.menu {
+    width: 200px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.menu h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+}
+
+
+.menu hr {
+    width: 100%;
+    border: 1px solid black;
+}
+
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(0, 34, 255);
+    font-weight: bold;
+}
+
+
+.menu img {
+    width: 100px;
+    align-self: center;
+}
+
+
+.article {
+    flex-grow: 1;
+    background-color: blueviolet;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+
+h1 {
+    text-align: center;
+}
